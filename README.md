@@ -32,6 +32,14 @@ brew install kubens
 ```bash
 kind create cluster --name dev-lab --config kind-cluster.yaml
 ```
+#### How to stop the cluster
+```bash
+kind delete cluster --name dev-lab
+```
+#### How to get all clusters
+```bash
+kind get clusters
+```
 ### Verify the Cluster is Running
 ```bash
 kubectl cluster-info --context kind-dev-lab
